@@ -1,1 +1,1 @@
-web: java -Dserver.port=$PORT -jar build/libs/*.jar
+java "-agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=8983" -jar start.jar
